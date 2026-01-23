@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<style>
+
+
+
+    .main{
+        background-color: white;
+        height: 900px;
+       border: none;
+        display: flex;
+        position: relative;
+        /* justify-content: space-evenly; */
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+       margin-top: 300px;
+    }
+    div{
+        /* height: 100px;    HEIGHT    */
+        /* width: 100px; */
+        background-color: brown;
+        border: 1px solid black;
+        color: white;
+      
+
+    }
+
+  
+    .div2{
+         position:absolute ;    
+        top: 70px;
+         /* height: 120px;           werrrrwewrwerwrweer*/
+         border: none;
+        box-shadow: 0px 4px 10px 10px rgba(222, 75, 75, 0.15),
+        4px 4px 12px rgb(0,0,0,0.15),
+        4px 4px 12px rgb(0,0,0,0.15);
+        display: flex;
+        flex-direction: row;
+        height: 280px;
+      
+        
+    }
+
+
+     /*                       LEFT-SIDE DIVS */
+    .div1{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+        background-color: rgb(2, 49, 49);
+        border: none;
+        border-radius: 10px;
+        z-index: 1;
+        
+    }
+
+    .div3{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+        border: none;
+        border-radius: 10px;
+        background-color:rgb(211, 195, 166);
+        box-shadow: 0px 4px 12px rgb(rgb(232, 165, 40));
+        z-index: 1;
+       
+       
+        
+    }
+
+
+    .items img{
+        height: 60px;
+        width: 55px;
+        object-fit: cover;
+        padding: 3px;
+       
+      
+       
+    }
+    .items h1{
+        font-size: 6px;
+        height: 7px;
+        text-align: center;
+        color:rgb(206, 234, 151);
+    }
+   
+    .items p{
+        font-size: 4px;
+        height: 15px;
+        /* width: 50px; */
+        text-align: center;
+        color: skyblue;
+        /* padding: 1px; */
+    }
+    .items{
+        width: 270px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 3px;
+        /* box-shadow:  4px 12px rgba(0,0,0,0.12); */
+       
+    }
+
+    .items>div{
+        height:110px;
+        width: 70px;
+        background-color: gray;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* padding: px; */
+        border: 1px solid transparent;
+        border-radius:6px;
+       padding:0;
+       
+    }
+
+    .color{
+        background-color: rgb(83, 79, 79);
+        border: none;
+        box-shadow: 0px 4px 20px 7px rgba(83, 79, 79);
+        box-shadow: 0px 4px 20px 7px rgba(83, 79, 79);
+        box-shadow: 0px 4px 20px 7px rgba(83, 79, 79);
+    }
+
+
+
+
+    /*                   div               */
+
+
+    .product{
+        display: flex;
+        gap: 10px;
+        background-color: white;
+        border: none;
+        padding: 10px;
+        /* height:118px; */
+    }
+
+    .product>div{
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+        gap: 5px;
+        background-color: rgba(237, 73, 13, 0.724);
+        border: none;
+        border-radius: 20px;
+        
+    }
+    .product img{
+        height: 60px;
+        width: 70px;
+        object-fit: cover;
+        padding: 3px;
+    }
+
+
+
+    .rate{
+         display: flex;
+         height: 10px;
+         width: 90px;
+        align-items: center;
+        justify-content: space-between;
+        border: none;
+        border-radius: 4px;
+         
+    }
+    .rate>h1{
+        font-size: 5px;
+        border: none;
+        padding: 3px;
+    }
+
+    button{
+        background-color:rgb(213, 56, 82);
+        border: none;
+        border-radius: 10px;
+        font-size: 7px;
+        width: 90px;
+        text-align: start;
+        color: whitesmoke;
+     
+    }
+
+    .product p{
+        font-size: 7px;
+        color:brown;
+        height: 20px;
+        width: 80px;
+    }
+
+    .star-pattern{
+        height: 10px;
+        width: 90px;
+        display: flex;
+        color: rgba(9, 248, 29, 0.92);
+        text-align: start;
+        font-size: 5px;
+        border: none;
+        padding-top:  5px;
+        border: none;
+        border-radius: 5px;
+        padding-left: 3px;
+
+
+    }
+
+
+    .btn2{
+        text-align: center;
+        background-color: blueviolet;
+        font-size: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+ 
+
+
+
+
+ /*                              */
+
+
+
+
+ .brand{
+        display: flex;
+        gap: 10px;
+        background-color: white;
+        border: none;
+        padding: 20px;
+       
+
+
+    }
+
+    .brand h1{
+        font-size: 10px;
+        color:olivedrab;
+    }
+    .brand img{
+        width: 100px;
+        
+    }
+
+    .brand div{
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        background-color:#fbef76;
+    }
+
+    .icon{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: skyblue;
+          border: none;
+        border-radius: 10px;
+    }
+
+
+     
+ 
+    .icon i{
+        font-size: 10px;    
+        color: rgb(146, 67, 170);
+        text-align: center;
+       
+
+    }
+    .brand button{
+        text-align: center;
+        background-color: rgb(74, 74, 106);
+    }
+    
+
+    .left-section{
+        /* height: 400px; */
+        background-color: chocolate;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        border: none;
+    }
+
+    .left-section img{
+        height: 250px;
+        width: 200px;
+        padding: 10px;
+        
+
+    }
+
+
+    .left-section p{
+        font-size: 15px;
+        padding: 10px;
+        color: rgb(90, 239, 35);
+        text-align: center;
+
+    }
+
+    .left-section ul{
+        color: rgb(235, 230, 240);
+        list-style: none;
+        font-size: 12px;
+        
+    }
+   
+</style>
+<body>
+  
+   <div class="main">
+            <div class="div1">
+                <div class="items">
+                    <div>
+                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfFjW4DuDcN6sMyBxm0VN6uIDyGyT8-9Zxiw&s" alt="">   
+                         <div class="color">   
+                            <h1>MOBILE PHONE</h1>
+                         <h1>$199.99</h1>
+                          <p>Pick your favorite smart phone and enjoy it anywhere!</p>
+                        </div>
+                      
+                    </div>
+
+                    <div>
+                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREXmryicno0lD2t3ouy1os8Te6668PO6o5Uw&s" alt="">   
+                         <div class="color">   <h1>MOBILE PHONE</h1>
+                         <h1>$199.99</h1>
+                          <p>Pick your favorite smart phone and enjoy it anywhere!</p>
+                        </div>
+                    </div>
+
+                    <div>
+                         <img src="https://cdn.lotuselectronics.com/webpimages/701651IM.webp" alt="">   
+                         <div class="color">   <h1>MOBILE PHONE</h1>
+                         <h1>$199.99</h1>
+                          <p>Pick your favorite smart phone and enjoy it anywhere!</p>
+                        </div>
+                    </div>
+
+                    <div>
+                         <img src="https://m.media-amazon.com/images/I/71E2A0uvanL.jpg" alt="">   
+                         <div class="color">   <h1>MOBILE PHONE</h1>
+                         <h1>$199.99</h1>
+                          <p>Pick your favorite smart phone and enjoy it anywhere!</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="items">
+                    <div>
+                         <img src="https://image.made-in-china.com/202f0j00NoJuqkjMGcbi/2021-New-I12-PRO-Max-6-7-Inch-Unlocked-Smart-Phone-256GB-8GB-RAM-Android-10-0-Mobile-Phones-Dual-SIM-Mobile-Phone.jpg" alt="">   
+                         <div class="color">   <h1>MOBILE PHONE</h1>
+                         <h1>$199.99</h1>
+                          <p>Pick your favorite smart phone and enjoy it anywhere!</p>
+                        </div>
+                    </div>
+
+                    <div>
+                         <img src="https://sc04.alicdn.com/kf/H8fe9b423da9245d08def5cfc49e19b193.jpg" alt="">   
+                         <div class="color">   <h1>MOBILE PHONE</h1>
+                         <h1>$199.99</h1>
+                          <p>Pick your favorite smart phone and enjoy it anywhere!</p>
+                        </div>
+                    </div>
+                    
+                    <div>
+                         <img src="https://sc04.alicdn.com/kf/H1807260fe5dd48e0ae9114143d226bbae.jpg" alt="">   
+                         <div class="color">   <h1>MOBILE PHONE</h1>
+                         <h1>$199.99</h1>
+                          <p>Pick your favorite smart phone and enjoy it anywhere!</p>
+                        </div>
+                    </div>
+
+                    <div>
+                         <img src="https://sc04.alicdn.com/kf/H83d51b6dbae6423ab3054176fac03bd3p.jpg" alt="">   
+                         <div class="color">   <h1>MOBILE PHONE</h1>
+                         <h1>$199.99</h1>
+                          <p>Pick your favorite smart phone and enjoy it anywhere!</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
+            <!--     next divs    -->
+
+
+
+            <div class="div2">
+                <div class="left-section">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPzqtzjTWWKZgMUE6R3xjg_iFIlJI1axjm4w&s" 
+                    alt=""
+                    >
+                    <p>Multipurpose Tailwind CSS Card Layouts Html Template</p>
+                   <ul>
+                    <li> 85+ Different Design online</li>
+                    <li> Modern, Sleek and Clean</li>
+                    <li> Light and Dark Version</li>
+                    <li> Eco-friendly Gatgets</li>
+                    <li> Productive items</li>
+                    <li> Branded at peak</li>
+                    <li> Limited Offers </li>
+                   </ul>
+
+
+                </div>
+                <div class="brand">
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQymx1b04v4CFnwBOvB70B3WOuk7BAKmRWN4w&s" alt="">
+                        <h1>Earphone</h1>
+                        <hr>
+                        <hr>
+                        <h1>$40.00</h1>
+                        <div class="icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star " style="color: black;"></i>
+                            <i class="fa-solid fa-star " style="color: black;"></i>
+                        </div>
+                        <button>Buy Now</button>
+                    </div>
+
+                    <div>
+                         <img src="https://m.media-amazon.com/images/I/61QH+Ta0QmL._AC_UF1000,1000_QL80_.jpg" alt="">
+                        <h1>Earphone</h1>
+                        <hr>
+                        <hr>
+                        <h1>$40.00</h1>
+                        <div class="icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star " style="color: black;"></i>
+                            <i class="fa-solid fa-star " style="color: black;"></i>
+                        </div>
+                        <button>Buy Now</button>
+
+                    </div>
+                          
+
+                    <div> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkUwlMYsYSHlIvvw4ZzEpUc3c_fEgT_GCc5Q&s" alt="">
+                        <h1>Earphone</h1>
+                        <hr>
+                        <hr>
+                        <h1>$40.00</h1>
+                        <div class="icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star " style="color: black;"></i>
+                            <i class="fa-solid fa-star " style="color: black;"></i>
+                        </div>
+                        <button>Buy Now</button></div>
+                </div>
+
+
+
+                 <div class="brand">
+                    <div>
+                        <img src="https://rkmobilecare.in/groodyne/2023/11/SMART-WATCH-ULTRA-GOLD-49MM.jpg" alt="">
+                        <h1>Earphone</h1>
+                        <hr>
+                        <hr>
+                        <h1>$40.00</h1>
+                        <div class="icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star " style="color: black;"></i>
+                            <i class="fa-solid fa-star " style="color: black;"></i>
+                        </div>
+                        <button>Buy Now</button>
+                    </div>
+
+                    <div>
+                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD6bSH_eehnprmAIExPsYj-qTav8OebQpQ1A&s" alt="">
+                        <h1>Earphone</h1>
+                        <hr>
+                        <hr>
+                        <h1>$40.00</h1>
+                        <div class="icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star " style="color: black;"></i>
+                            <i class="fa-solid fa-star " style="color: black;"></i>
+                        </div>
+                        <button>Buy Now</button>
+
+                    </div>
+                          
+
+                    <div> <img src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Sites-titan-master-catalog/default/dwd2f2804d/images/Titan/Catalog/90208NM01_1.jpg?sw=600&sh=600" alt="">
+                        <h1>Earphone</h1>
+                        <hr>
+                        <hr>
+                        <h1>$40.00</h1>
+                        <div class="icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star " style="color: black;"></i>
+                            <i class="fa-solid fa-star " style="color: black;"></i>
+                        </div>
+                        <button>Buy Now</button></div>
+                </div>
+            </div>
+
+
+
+
+            <div class="div3">
+                <div class="product">
+                    <div>
+                        <img src="https://pctech.co.in/image/cache/catalog/Laptops/DELL/dell-xps-13-9315-2in1-blue-1-500x400w.jpg" alt="">
+                        <div class="rate">
+                            <h1>Smart Fitness Tracker</h1>
+                            <h1>$59.99</h1>
+                        </div>
+
+                        <button class="btn1"> Digital Watch</button>
+                        <p>Take your steps heart rate , shop patterns and make an eco-friendly nature!</p>
+                        <div class="star-pattern">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <button class="btn2">Add to Cart</button>
+                    </div>
+
+
+                    <div> <img src="https://3.imimg.com/data3/UJ/OC/MY-16094111/laptop-500x500.jpg" alt="">
+                        <div class="rate">
+                            <h1>Smart Fitness Tracker</h1>
+                            <h1>$59.99</h1>
+                        </div>
+
+                        <button class="btn1"> Digital Watch</button>
+                        <p>Take your steps heart rate , shop patterns and make an eco-friendly nature!</p>
+                        <div class="star-pattern">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <button class="btn2">Add to Cart</button></div>
+
+
+                    <div> <img src="https://static.bhphoto.com/images/images250x250/1751993719000_1904850.jpg" alt="">
+                        <div class="rate">
+                            <h1>Smart Fitness Tracker</h1>
+                            <h1>$59.99</h1>
+                        </div>
+
+                        <button class="btn1"> Digital Watch</button>
+                        <p>Take your steps heart rate , shop patterns and make an eco-friendly nature!</p>
+                        <div class="star-pattern">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <button class="btn2">Add to Cart</button></div>
+                </div>
+
+
+
+                  <div class="product">
+                    <div>
+                        <img src="https://sylvi.in/cdn/shop/files/Sylvi_Iconic_Black_No_hand_800x1000_95ca679c-3634-4857-8a2a-d5b3220fd3cf_1080x.webp?v=1690541997" alt="">
+                        <div class="rate">
+                            <h1>Smart Fitness Tracker</h1>
+                            <h1>$59.99</h1>
+                        </div>
+
+                        <button class="btn1"> Digital Watch</button>
+                        <p>Take your steps heart rate , shop patterns and make an eco-friendly nature!</p>
+                        <div class="star-pattern">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <button class="btn2">Add to Cart</button>
+                    </div>
+
+
+                    <div>
+                         <img src="https://titanworld.com/cdn/shop/files/1802KM01_1_837a07e8-b3c1-46d3-a81c-efb2e969584d.jpg?v=1706547481" alt="">
+                        <div class="rate">
+                            <h1>Smart Fitness Tracker</h1>
+                            <h1>$59.99</h1>
+                        </div>
+
+                        <button class="btn1"> Digital Watch</button>
+                        <p>Take your steps heart rate , shop patterns and make an eco-friendly nature!</p>
+                        <div class="star-pattern">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <button class="btn2">Add to Cart</button>
+                    </div>
+
+
+                    <div> <img src="https://tyrhino.com/wp-content/uploads/2023/02/Black.jpg" alt="">
+                        <div class="rate">
+                            <h1>Smart Fitness Tracker</h1>
+                            <h1>$59.99</h1>
+                        </div>
+
+                        <button class="btn1"> Digital Watch</button>
+                        <p>Take your steps heart rate , shop patterns and make an eco-friendly nature!</p>
+                        <div class="star-pattern">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <button class="btn2">Add to Cart</button></div>
+                </div>
+
+                
+            </div>
+   </div>
+
+</body>
+</html>

@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+
+    <style>
+
+        body{
+            margin: 0;
+            padding: 100px;
+            height: 100dvh;
+            
+          
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: rgb(22, 20, 20);
+
+        }
+
+
+        .header img {
+            height: 300px;
+            object-fit: cover;
+        }
+
+
+        .anchors {
+            width: 50%;
+            display: flex;
+            justify-content: space-evenly;
+
+
+        }
+
+
+        .header a:hover {
+            border: 1px solid white;
+        }
+
+        .header img:hover {
+            border: 1px solid white;
+        }
+
+        .anchors a {
+            /* width: 250px; */
+            font-size: 40px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .Hero-section {
+            background-color: black;
+            display: flex;
+            justify-content: space-around;
+            gap: 100px;
+
+        }
+
+        .Hero-section>div {
+            border: 2px solid black;
+            width: 100%;
+            color: white;
+
+        }
+
+        .Hero-section h1 {
+            font-size: 120px;
+            text-align: center;
+        }
+
+
+        .left {
+            height: 120rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .left>img {
+            height: 57%;
+            width: 65%;
+
+
+        }
+
+        .right {
+            display: flex;
+            flex-direction: column;
+            /* background-color: green; */
+            /* width: 200px; */
+            flex-wrap: wrap;
+        }
+
+
+        .contents {
+            display: flex;
+            flex-direction: column;
+            margin-left: 70px;
+            gap: 50px;
+            width: 80%;
+            border: 1px solid transparent;
+
+        }
+
+        .contents input,
+        p {
+            width: 98%;
+            height: 90px;
+            border-radius: 50px;
+            border: 1px solid white;
+            color: blueviolet;
+            font-size: 25px;
+            /* padding: 30px; */
+            padding-left: 30px;
+            /* background-color: ; */
+            display: flex;
+            background-color: transparent;
+
+
+        }
+
+        .contents .input {
+            height: 300px;
+            /* text-align: center; */
+            padding: 20px;
+            font-size: 30px;
+            box-sizing: border-box;
+            padding-bottom: 230px;
+            width: 70%;
+         
+            
+        }
+
+
+        .contents .second,
+        .third {
+            display: flex;
+            gap: 50px;
+        }
+
+        .first {
+            width: 100%;
+            /* background-color: red; */
+            border-radius: 50px;
+            border: 1px solid transparent;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            gap: 50px;
+
+        }
+
+        .first img {
+            height: 30px;
+            width: 39px;
+        }
+
+        .first input {
+            border: 1px solid white;
+            /* background-color:white; */
+            width: 50%;
+
+
+        }
+
+        .first .flag {
+            border: 1px solid white;
+            width: 50%;
+            height: 100%;
+            border-radius: 50px;
+            /* background-color: white; */
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+            position: relative;
+
+        }
+
+        .flag h1 {
+            font-size: 20px;
+            /* margin-right: 200px; */
+        }
+
+        .flag i {
+            /* width: 100%; */
+            position: absolute;
+            right: 10px;
+
+        }
+
+        .send {
+            width: 70%;
+            text-align: center;
+            background-color: lightgreen;
+            height: 100px;
+            border-radius: 50px;
+            color: black;
+            font-weight: bold;
+            font-size: 30px;
+            border: 2px solid white;
+        }
+
+        .send:hover {
+            background-color: transparent;
+            color: green;
+        }
+
+
+        .para .highlight {
+            font-size: 70px;
+
+
+        }
+
+        .para h1,
+        p {
+            font-size: 50px;
+        }
+
+        .para p {
+            width: 43%;
+            height: 500px;
+        }
+
+        .img {
+            width: 700px;
+
+            margin-top: 150px;
+            width: 100%;
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+            align-items: center;
+            margin-inline: 150px;
+
+
+
+
+        }
+
+        .img>div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 800px;
+            padding: 30px;
+            background-color: white;
+            box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.12);
+        }
+
+        .img img {
+            height: 70rem;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .img h1,
+        p {
+            font-size: 60px;
+            text-align: center;
+        }
+
+        .img .color {
+            color: green;
+        }
+
+        .img .blue {
+            color: blue;
+        }
+
+        .img button {
+            height: 40px;
+            width: 250px;
+            text-align: center;
+            border-radius: 55px;
+            background-color: green;
+            color: white;
+            border: none;
+
+        }
+
+        .relative {
+            position: absolute;
+            top: -700px;
+            object-fit: cover;
+
+            /* height: 2000px; */
+            /* margin: 0px; */
+
+        }
+
+        .beside {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            justify-content: center;
+            top: 270px;
+            /* top: 70px; */
+
+
+
+
+        }
+
+        .img .beside {
+            height: 110rem;
+            width: 30%;
+            font-size: 60px;
+            text-align: center;
+            box-shadow: 0px 0px 0px;
+            /* background-color: orange; */
+            position: relative;
+            right: 30px;
+
+        }
+
+        .beside h1 {
+            font-size: 100px;
+
+        }
+
+        .beside button {
+            font-size: 30px;
+            height: 100px;
+            width: 400px;
+        }
+
+        .beside button:hover {
+            background-color: burlywood;
+            font-size: 40px;
+            color: yellow;
+        }
+
+        .remains {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 70px;
+            position: relative;
+            top: 100px;
+
+        }
+
+        .iconic {
+            display: flex;
+            gap: 50px;
+
+
+        }
+
+        .iconic>div {
+            z-index: 3;
+            padding: 30px;
+            box-shadow: 0px 0px 12px 15px rgba(0, 0, 0, 0.12);
+        }
+
+        .iconic img {
+            object-fit: cover;
+        }
+
+        .Digital h2 {
+            font-size: 50px;
+        }
+
+        .Digital h1 {
+            font-size: 90px;
+            color: blue;
+        }
+
+        .Digital i {
+            /* height: 300px;
+            width: 300px; */
+            font-size: 100px;
+            margin-right: 90px;
+
+        }
+
+        .search,
+        .create {
+            display: flex;
+            flex-direction: column;
+            gap: 100px;
+        }
+
+        section {
+            margin-top: 200px;
+            margin-inline: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 0px 12px 15px rgba(0, 0, 0, 0.15);
+            width: 70%;
+            height: 30rem;
+
+
+        }
+
+        section h1 {
+            font-size: 70px;
+        }
+
+        section img {
+            height: 200px;
+            width: 300px;
+            font-size: 30rem;
+            margin-right: 50px;
+
+
+        }
+
+        .Lorem {
+            font-size: 60px;
+            color: white;
+            text-align: center;
+            width: 70%;
+            height: 500px;
+            background-color: rgb(221, 212, 228);
+            margin-inline: 400px;
+            margin-top: 300px;
+            background-color: rgb(110, 68, 68);
+            box-shadow: 0px 0px 12px 12px rgba(0, 0, 0, 0.15);
+
+        }
+
+        .first-footer {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        .first-footer img {
+            height: 300px;
+        }
+
+        .first-footer input,
+        button {
+            height: 70px;
+
+        }
+
+        .first-footer button {
+            background-color: #eabc3a;
+            color: white;
+            font-size: 25px;
+        }
+        .first-footer .pink:active{
+            background-color: pink;
+        }
+
+        .first-footer button:hover {
+            border: 2px solid #eabc3a;
+            background-color: transparent;
+
+        }
+
+        .first-footer input {
+            border-radius: 40px;
+            border: 2px solid white;
+            background-color: transparent;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .first-footer i {
+            font-size: 70px;
+        }
+
+        .first-footer p {
+            font-size: 25px;
+            border: none;
+        }
+
+        .arrange{
+            display: flex;
+            
+        }
+        .arrange li{
+            font-size: 45px;
+        }
+
+        .services li {
+            list-style: none;
+            font-size: 45px;
+
+        }
+        .services h1{
+            font-size: 60px;
+        }
+
+        .footers{
+            display: flex;
+            background-color: black;
+            color: white;
+            justify-content:space-between;
+            align-items: center;
+            padding: 60px;
+            gap: 150px;
+            margin-left: 50px;
+            
+
+        }
+
+        .footers>div{
+            display: flex;
+            flex-direction: column;
+            margin-left: 150px;
+        }
+
+        .contact h1{
+            font-size: 45px;
+        }
+        .contact footer{
+            font-size: 35px;
+        }
+
+        .contact .ordinary{
+            width: 40%;
+        }
+        .footers footer{
+            color: rgb(222, 109, 109);
+        }
+
+
+        .pink:active{
+            background-color: pink;
+        }   
+
+
+        .fixed,.sticky{
+            height: 100px;
+            width: 200px;
+            border: 2px solid transparent;
+            color: white;
+            font-size: 40px;
+            text-align: center;
+            
+        }
+
+        .fixed{
+            background-color: green;
+            position: fixed;
+            top: 200px;
+            animation: blink2 1s ease-in-out infinite;
+        }
+        .sticky{
+            /* background-color: red; */
+            position: sticky;
+            top: 350px;
+            animation: blink 6ms linear infinite;
+        }
+
+        @keyframes blink{
+            100%{
+                background-color: red;
+            }
+        }
+
+
+        @keyframes blink2{
+          0%{
+              left:0px;
+            }
+           
+            100%{
+                left:100px;
+            }
+        }
+
+
+        .fixed2{
+            width:50rem;
+            background-color:transparent;
+            position: fixed;
+            top: 600px;
+            right: 0%;
+            animation: zoom 7s ease-out infinite;
+            object-fit: cover;
+            opacity: 0.1;
+        }
+
+         @keyframes zoom{
+            from{
+                transform:scale(0.5);
+            }
+
+            to{
+                transform: scale(2);
+            }
+        } 
+    </style>
+</head>
+
+<body>
+    <nav class="header ">
+        <img src="https://astream.in/wp-content/uploads/2023/08/ASTREAM-LOGO.png" alt="">
+        <div class="anchors ">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT </a>
+            <a href="#" class="icon1">SERVICES <i class="fa-sharp fa-solid fa-caret-down"></i></a>
+            <a href="#" class="icon2">PRODUCT <i class="fa-sharp fa-solid fa-caret-down"></i></a>
+            <a href="#">CONTACT US</a>
+        </div>
+    </nav>
+
+    <div class="Hero-section">
+        <div class="left">
+            <h1>Transform your Online Presence with Professional Web Design Services</h1>
+            <img src="https://astream.in/wp-content/uploads/2023/08/Frame-34262-2-415x350-1.webp" alt="">
+        </div>
+
+
+        <div class="right">
+            <h1>Get your Website in 48 Hour</h1>
+
+            <div class="contents">
+                <input type="text" placeholder="Name">
+                <div class="first">
+                    <div class="flag">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4fh8LKCFrUbAg0W7NdTEGHHDLCXXegvXhA&s"
+                            alt="">
+                        <h1>+91</h1><i class="fa-sharp fa-solid fa-caret-down"></i>
+                    </div>
+                    <input type="number" placeholder="Phone">
+                </div>
+
+                <div class="second">
+                    <input type="email" placeholder="email">
+                    <input type="text" placeholder="Web Design & Develpment">
+                </div>
+
+                <div class="third">
+                    <input type="text" placeholder="Which Business do you have?">
+                    <input type="text" placeholder="You are from">
+                </div>
+
+              <input type="text" placeholder="Give a short description, what you want from us." class="input">
+                <button class="send pink">SEND</button>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="para">
+        <h1>You Think We Built Your Vision</h1>
+        <h1 class="highlight">We Mind Your Business</h1>
+        <p>
+            Are you desiring to achieve your digital dream with the best-combined services? Astream is here for you, to
+            provide all types of digital support regarding personal or professional as well as e-commercial website
+            issues. Apart from this, we deliver a wide range of services that meet your specific needs.This article
+            mentions your favorite hats at super low prices. Choose from same-day delivery, drive-up delivery or order
+            pickup.
+        </p>
+
+    </div>
+
+      <div class="sticky">Expire soon!</div>
+
+    <div class="img">
+        <div>
+            <img src="https://astream.in/wp-content/uploads/2023/08/webdesign-serice.png" alt="">
+            <h1 class="color">Website Design & Development</h1>
+            <h1>Fully compatible and user-friendly dynamic websites to perform the user's requirements.</h1>
+        </div>
+
+
+        <div>
+            <img src="https://astream.in/wp-content/uploads/2023/08/pexels-syed-qaarif-andrabi-12495614.jpg" alt="">
+            <h1 class="blue">Website Design & Development</h1>
+            <h1>Fully compatible and user-friendly dynamic websites to perform the user's requirements.</h1>
+        </div>
+
+
+        <div>
+            <img src="https://astream.in/wp-content/uploads/2023/08/webdesign-serice-1.png" alt="">
+            <h1 class="blue">Website Design & Development</h1>
+            <h1>Fully compatible and user-friendly dynamic websites to perform the user's requirements.</h1>
+        </div>
+
+
+        <div class="beside">
+            <img src="https://astream.in/wp-content/uploads/2023/08/Copy-of-National-Technology-Day-Made-with-PosterMyWall-1-305x360-1.webp"
+                alt="" class="relative ">
+            <div>
+                <h1 class="blue">Request a Quote</h1>
+                <h1>Get Your Personal Website / Business Website & E-commerce Website at an Affordable Cost</h1>
+                <button>ENQUIRE NOW</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!--         -->
+
+    <div class="remains">
+        <div class="Digital">
+            <h2>Our Expertise in Digital Marketing</h2>
+            <h1>Digital Marketing Services</h1>
+            <div class="social-media">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-google"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </div>
+
+        <!--  -->
+        <div class="iconic">
+            <div class="search">
+                <img src="https://astream.in/wp-content/uploads/2023/08/webdesign-serice-2.png" alt="">
+                <h1>Top-class SEO service with SMO integration</h1>
+            </div>
+            <div class="create">
+                <img src="https://astream.in/wp-content/uploads/2023/08/webdesign-serice-3.png" alt="">
+                <h1>E-mail Marketing & PPC Campaign</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <!--  -->
+    <section>
+        <h1>Some of Our Clients</h1>
+        <div>
+            <img src="https://astream.in/wp-content/uploads/2023/08/10004-1-150x150.png" alt="">
+            <img src="https://astream.in/wp-content/uploads/2023/08/10003-1-150x150.png" alt="">
+            <img src="https://astream.in/wp-content/uploads/2023/08/10002-1-150x150.png" alt="">
+            <img src="https://astream.in/wp-content/uploads/2023/08/10001-1-150x150.png" alt="">
+            <img src="https://astream.in/wp-content/uploads/2023/08/10007-150x150.png" alt="">
+            <img src="https://astream.in/wp-content/uploads/2023/08/10006-150x150.png" alt="">
+        </div>
+    </section>
+
+
+
+    <p class="Lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eum architecto dolor. Provident
+        consectetur fugiat officia odio hic explicabo ut itaque quae, id distinctio, accusamus voluptatum
+        exercitationem? Ab, quam sapiente?
+        Est magnam ad labore inventore nemo vel, odio reprehenderit accusamus alias sint repellat iusto, unde totam
+        porro tempora. Animi earum voluptate, quis reprehenderit laudantium repellendus repellat at vitae adipisci
+        mollitia!
+        Impedit culpa eum distinctio veritatis quasi consequuntur quidem commodi, corporis architecto aut tenetur
+        laborum esse tempora nesciunt dignissimos aliquam. Quia voluptate unde, molestias illo similique atque quasi.
+        Reprehenderit, placeat inventore?</p>
+
+    <div class="footers">
+        <div class="first-footer">
+            <img src="https://astream.in/wp-content/uploads/2023/08/ASTREAM-LOGO.png" alt="">
+            <input type="email" placeholder="Email">
+            <button class="pink">SUBSCRIBE</button>
+            <i class="fa-brands fa-facebook"></i>
+            <p>©2026 Astream. All Rights Reserved.</p>
+        </div>
+        <!--  -->
+        <div class="services">
+            <h1>Our Services</h1>
+            <div class="arrange">
+
+                <div>
+                    <ul>
+                        <li>> Web Design and Development</li>
+                        <li>> App Development</li>
+                        <li>> Website Maintenance</li>
+                        <li>> Digital Marketing</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <ul>
+                        <li>> Web Design and Development</li>
+                        <li>> App Development</li>
+                        <li>> Website Maintenance</li>
+                        <li>> Digital Marketing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <div class="contact">
+            <h1>Contact Info</h1>
+            <div>
+
+                <h1> +918974284157</h1>
+
+                <h1>info@astream.in</h1>
+
+                <h1 class="ordinary"> Bluestar Complex, Plot-731-276, Madhubana,cuttack Trisulia, Odisha 754005
+                </h1>
+
+                <footer>Privacy Policy
+                    Made with 💛 by ThinkWebHub
+                </footer>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!--                 -->
+
+
+    <div class="fixed">Limited offers!</div>
+  
+    <div class="fixed2">
+        <img src="Tech.jpg" alt="">
+    </div>
+</body>
+
+</html>

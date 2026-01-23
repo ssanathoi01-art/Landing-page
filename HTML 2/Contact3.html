@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .nav{
+             height: 200px;
+             /* width: 700px; */
+             display: flex;
+             justify-content: space-around;
+             align-items: center;
+             background-color: #0a2641;
+             /* gap: 100px; */
+             color: white;
+            cursor: pointer;
+        }
+
+        .nav h1{
+            /* margin-right: 300px; */
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 50px;
+            margin-left: 0px;
+        }
+
+        .anchor {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 170px;
+            
+        }
+        .anchor a{
+            /* margin-right: 80px; */
+            color: white;
+            text-decoration: none;
+            font-size: 40px;
+        }
+
+        .anchor>button{
+            border-radius: 20px;
+            height: 40px;
+            width: 200px;
+            font-size: 20px;
+        }
+
+
+        .right-panel{
+            height: 400px;
+            width: 300px;
+            /* background-color: orange; */
+        }
+
+        .main{
+            height: 120px;
+            width: 220px;
+            /* background-color:rgb(29, 114, 147); */
+            display: flex;
+            gap: 25px;
+        }
+        .main>div{
+            /* background-color: black; */
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            background-color: #50E9A3 ;
+            
+        }
+
+        .sub{
+             height: 120px;
+            width: 220px;
+            /* background-color:yellow; */
+            display: flex;
+            gap: 25px;
+        }
+
+        .sub>div{
+             height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            background-color:#50E9A3 ;
+        }
+
+
+        .Hero-section{
+            display: flex;
+            background-color: #0a2641;
+            color: rgb(219, 195, 195);
+            justify-content: space-around;
+            height: 350px;
+            /* margin-top: 50px; */
+            cursor: pointer;
+        }
+
+        /* .left-panel{
+            display: flex;
+            flex-direction: column;
+        } */
+        .left-panel h1{
+            color: rgb(244, 232, 232);
+            height: 55px;
+            width: 350px;
+            /* font-family: Arial, Helvetica, sans-serif; */
+        }
+        .left-panel p{
+           height: 55px;
+           width: 370px;
+        }
+
+        .btn button{
+            height: 40px;
+            width: 150px;
+            border-radius: 20px;
+            margin-top: 40px;
+        }
+
+        button+button{
+            background-color:transparent;
+            color: white;
+            border-color: white;
+        }
+
+
+        .top{
+            padding: 30px;
+            background-color:white;
+            display: flex;
+            margin-top: 100px;
+            gap: 30px;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .first img{
+            height: 350px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+       
+        .click{
+            display: flex;
+            gap: 25px;
+        }
+        .click .btn{
+            width: 45%;
+            height: 50px;
+            background-color:rgb(58, 220, 58);
+            color: black;
+              border-radius:10px;
+            border: 1px solid black;
+            text-align: center;
+            border: none;
+            font-size: 30px;
+
+        }
+        .click .btn:hover{
+            background-color: #6594b1;
+            cursor: pointer;
+        }
+
+        .btn+button{
+            width: 45%;
+            height: 50px;
+           font-size: 30px;
+            
+            border-radius: 10px;
+            border: 1px solid black;
+            color: black;
+           
+            padding-bottom: 1px;
+        }
+        .first{
+            height: 700px;
+            width: 720px;
+            background-color:white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 12px rgba(0,0,0,0.12);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .first h1{
+            height: 20px;
+            font-size: 60px;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .first p{
+            font-size: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .middle{
+            text-align: center;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <header>
+        <nav class="nav">
+            <h1>Boldo</h1>
+            <div class="anchor">
+               <a href="#">Product</a>
+               <a href="#">About</a>
+               <a href="#">Contact</a>
+               <button>Login</button>
+            </div>
+        </nav>
+
+
+        <div class="Hero-section">
+            <div class="left-panel">
+                <h1>Save time by building fast with Boldo Template</h1>
+                <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, maxime. Voluptates alias iure quo quasi veritatis id similique.</P>
+
+                <div class="btn">
+                    <button>Buy template</button>
+                    <button>Buy template</button>
+                </div>
+            </div>
+
+
+
+
+            <div class="right-panel">
+                <div class="main">
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <div class="sub">
+                     <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+<h1 class="middle">Popular Products</h1>
+
+
+    <div class="top">
+        <div class="first">
+            <img src="whatsapp.jpeg" alt="">
+            <h1>Template A</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <div class="click">
+                <button class="btn">Get</button>
+                <button>Save</button>
+            </div>
+
+        </div>
+
+
+        <div>
+            <div class="first">
+            <img src="whatsapp.jpeg" alt="">
+            <h1>Template A</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <div class="click">
+                <button class="btn">Get</button>
+                <button>Save</button>
+            </div>
+
+        </div>
+        </div>
+        
+
+        <div>
+            <div class="first">
+            <img src="whatsapp.jpeg" alt="">
+            <h1>Template A</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <div class="click">
+                <button class="btn">Get</button>
+                <button>Save</button>
+            </div>
+
+        </div>
+        </div>
+
+
+        <div>
+            <div class="first">
+            <img src="whatsapp.jpeg" alt="">
+            <h1>Template A</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <div class="click">
+                <button class="btn">Get</button>
+                <button>Save</button>
+            </div>
+
+        </div>
+        </div>
+    </div>
+    
+
+   
+    
+</body>
+</html>

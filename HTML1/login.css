@@ -1,0 +1,64 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.hollow{
+    height: 400px;
+    width: 400px;
+    background-color:cadetblue;
+    border: 2px solid black;
+    margin-top: 500px;
+    /* position:relative;
+    top: 200px;
+    left: 200px; */
+  margin-left: 300px;
+ 
+  background-image: url(Wheel.png);
+  /*overflow:scroll;*/
+  
+    transform-style: preserve-3d;
+   transform:  perspective(600px)rotatey(45deg);
+    
+    animation: blink 5ms ease-in-out infinite;
+    
+}
+
+.png{
+    height: 500px;
+    width: 500px;
+    background-color: greenyellow;
+    
+    transform: rotatex(45deg);
+    transition: all 3s linear;
+   transform-origin: top left;
+
+}
+
+
+.png:hover{
+   
+}
+
+
+
+
+@keyframes blink{
+    0%{
+      background-color:cadetblue
+    }
+
+    50%{
+        background-color: indigo;
+    }
+    100%{
+        background-color: orange;
+    }
+}
+
+
+
+

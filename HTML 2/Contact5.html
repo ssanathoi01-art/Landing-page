@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .hero{
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg{
+  position: absolute;
+  inset: 0;
+  background: url("image.jpg") center/cover no-repeat;
+  z-index: 1;
+}
+
+.overlay{
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(10px);
+  z-index: 2;
+}
+
+.content{
+  position: relative;
+  z-index: 3;
+  color: white;
+  text-align: center;
+  top: 40%;
+} */
+
+
+.main{
+  height: 200px;
+  width: 200px;
+  background-color: pink;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  gap: 5px;
+  position: relative;
+ 
+}
+
+.second{
+  height: 50px;
+  width: 50px;
+  background-color: rgb(44, 176, 44);
+   border: 1px solid black;
+   position: absolute;
+}
+.first{
+  height: 100px;
+  width: 50px;
+  background-color: rgb(154, 248, 154);
+   border: 1px solid black;
+}
+
+
+
+.pseudo{
+   padding: 20px;
+    border: 1px solid black;
+    font-size: 25px;
+  margin-inline: 100px;
+  font-size: 25px;
+   
+}
+.pseudo::before{
+  content: "start";
+  background-color: orange;
+  color: white;
+  /* font-size: 45px; */
+  
+}
+
+.pseudo::after{
+  content: "end";
+  background-color: pink;
+  color: rgb(45, 27, 27);
+
+}
+
+
+/* .box{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+} */
+.one ,.two,.three,.four,.five,.six{
+  font-size: 25px;
+  font-weight: bolx;
+  width: 200px;
+  height: 50px;
+  background-color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 1;
+  overflow: hidden;
+  box-shadow: -2px 2px 5px rgba(0,0,0,.5);
+  position:relative
+  
+  
+}
+
+/*             */
+
+.one::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: green;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+ translate: -90%;
+ transition: .5s all ease-in-out;
+}
+
+.one:hover::before{
+  translate: 0%;
+}
+
+.one:hover{
+  color: white;
+  border-color: white;
+
+
+}
+
+
+/*  two */
+
+
+.two::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+ translate: -90%;
+ transition: .5s all ease-in-out;
+}
+
+.two:hover::before{
+  translate: -50%;
+}
+
+
+/*  */
+.two::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+ translate: 90%;
+ transition: .5s all ease-in-out;
+}
+
+.two:hover::after{
+  translate: 50%;
+}
+
+.two:hover{
+  color: white;
+  border-color: white;
+
+
+}
+
+
+/*  three */
+
+
+/*  */
+ .three{
+  background-color: rgb(227, 193, 204);
+  color: rgb(134, 104, 93);
+ }
+/*  */
+
+.three::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color:blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+ translate: -50%;
+ transition: .5s all ease-in-out;
+}
+
+.three:hover::before{
+  translate: -100%;
+}
+
+
+.three::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+ translate: 50%;
+ transition: .5s all ease-in-out;
+}
+
+.three:hover::after{
+  translate: 100%;
+}
+
+.three:hover{
+  color: blue;
+  border-color:skyblue;
+
+
+}
+
+
+/*  four */
+
+
+.four::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color:blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+transform: translateY(-50%);
+ transition: .5s all ease-in-out;
+}
+
+.four:hover::before{
+ transform: translateY(-100%);
+}
+
+
+.four::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+ transform: translateY(50%);
+ transition: .5s all ease-in-out;
+}
+
+.four:hover::after{
+ transform: translateY(100%);
+}
+
+.four:hover{
+  color:green;
+  border: color #cabc3a;;
+
+
+}
+
+
+/*  five */
+
+
+.five::before{
+  content: '';
+  width: 50%;
+  height: 100%;
+  background-color:blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+transform: translatex(-100%) ;
+ transition: .5s all ease-in-out;
+ 
+}
+
+.five:hover::before{
+ transform: translatex(0%) rotate(180deg);
+}
+
+
+.five::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+ transform: translateX(100%);
+ transition: .5s all ease-in-out;
+}
+
+.five:hover::after{
+ transform: translatex(0%) rotate(-180deg);
+}
+
+.five:hover{
+  color:wheat;
+  border-color: blue;
+
+
+}
+
+
+/*  six */
+
+.six{
+  color: rgb(42, 45, 207);
+}
+
+.six::before{
+  content: '';
+  width: 200px;
+  height: 200px;
+  background-color:rgb(0, 0, 12);
+  position: absolute;
+  border-radius: 50%;
+  
+  top: 0;
+  left: 0;
+  z-index: -1;
+transform: translateX(-1%) translateY(-40%) scale(0);
+ transition: .5s all ease-in-out;
+ 
+}
+
+.six:hover::before{
+ transform:translateX(-1%) translateY(-40%) scale(100%);
+}
+
+
+/* .six::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+ transform: translateY(100%);
+ transition: .5s all ease-in-out;
+}
+
+.six:hover::after{
+ transform: translatex(0%) rotate(-180deg);
+} */
+
+.six:hover{
+  color:white;
+  border-color: blue;
+  /* overflow: visible; */
+
+
+}
+
+
+    </style>
+</head>
+<body>
+    <!-- <div class="hero">
+  <div class="bg"></div>
+  <div class="overlay"></div>
+  <div class="content">
+    <h1>Landing Page</h1>
+    <p>Modern UI design</p>
+  </div>
+</div> -->
+
+
+<div class="main">
+  <div class="first"> box1</div>
+  <div class="second">box2</div>
+</div>
+
+
+<p class="pseudo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error illum suscipit numquam. Laborum, tenetur debitis, id aut cumque aliquid et neque distinctio vitae repellendus adipisci numquam ab ratione repellat enim.
+Aut quia quas, animi veritatis eos maxime! Illo doloremque quis quas iste, dicta explicabo aliquid possimus magnam eos sit quidem voluptatibus consequuntur facilis sed amet? Itaque non similique ipsam quos.
+Sint soluta voluptates aspernatur, nisi, dolores ratione, voluptas dolorem adipisci aperiam in ad vel tempora eos aliquam iure excepturi. Sunt blanditiis, fuga ut deleniti nisi non sequi quod iusto voluptates?
+Itaque excepturi repellendus explicabo inventore, atque corrupti maiores deleniti. Pariatur, cumque? Perspiciatis aperiam nostrum saepe fugiat in? Et distinctio quis dolores ratione eligendi debitis, sed consectetur consequuntur officiis accusamus non.</p>
+
+
+<!-- <div class="box"> -->
+  <button class="one">button</button>
+  <button class="two">button2</button>
+  <button class="three">button3</button>
+  <button class="four">button4</button>
+  <button class="five">button5</button>
+  <button class="six">button6</button>
+<!-- </div> -->
+
+
+</body>
+</html>

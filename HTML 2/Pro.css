@@ -1,0 +1,217 @@
+
+ #navbar{
+    height: 120px;
+    background-color: blueviolet;
+    border-style: solid;
+    border-color: yellow;
+    border-width: 10px;
+}
+
+
+a{
+    color: white;
+  
+    font-size: 50px;
+    text-decoration: underline;
+    text-decoration-color:rgb(49, 171, 231);
+    padding-top: 70px;
+    height: 100px;
+    margin: 300px;
+    
+   
+}
+#Logo{
+    color:chartreuse;
+    font-size: 70px;
+     text-decoration:none;
+    margin-top:1000px;
+
+    
+   
+   
+}
+
+input{
+    font-size: 30px;
+    background-color:rgb(90, 229, 168);
+    color:black);
+    font-weight: 800;
+}
+
+button{
+    font-size: 20px;
+    background-color: rgb(12, 198, 96);   
+} 
+
+
+      .box1{
+        
+    width: 100px;
+    height: 100px;
+    background-color:rgb(145, 149, 138, 0.5);
+    font-size:3rem;
+    margin-left: 50px;
+    margin-top: 50px;
+      
+}
+
+.box2{
+    
+    width:4vw;
+    height:5vh;
+   background-color:rgb(145, 149, 138, 0.7);
+  font-size:3rem;
+       
+    
+} 
+ 
+
+
+   
+
+div{
+    height: 200px;
+    width: 200px;
+     background-color: rgb(218, 119, 119);
+     display: inline;
+     font-size: 50px;
+     margin-top: 100px;
+     margin margin-left: 20px;/////red blue pink black
+} 
+
+
+
+
+div{
+    height:200px;
+    width:200px;
+   background-color: aqua;
+   border: 2px solid black;
+   display: inline-block;
+   margin-top: 100px;
+   border-radius: 20px 40px;
+   display: flex;
+   flex-direction: row;
+  
+  
+   
+    
+}
+.box1{
+    position: absolute;
+    top:70px;
+    left: 200px;
+    z-index: 1;
+    background-image:url(dog2.png);
+    background-size: cover;
+   
+
+}
+.box2{
+    position: relative;
+    top:200px;
+    left:270px;
+     margin-left: 100px;
+       background-image: url(dog3.png);
+     background-size: cover;
+
+}
+.box3{
+    position: fixed;
+    top: 70px;
+    left:350px;
+     margin-left: 200px;
+     background-image: url(dog.png);
+     background-size: cover;
+     border-radius: 50px 90px 30px 20px
+
+
+
+
+}
+
+.box4{
+   position: absolute;
+   top:250px;
+   left: 420px;
+    margin-left: 300px;
+    z-index: -1;
+      background-image: url(dog4.png);
+     background-size: cover;
+    
+
+} 
+
+ body{
+    text-align: center;
+}
+
+div{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    border:2px solid rgb(66, 75, 67);
+}
+   
+#container{
+    width:500px;
+    height: 100px;
+    display: flex;
+    justify-content:;
+    /* flex-direction:row;
+    justify-content:center;
+    flex-wrap:wrap-reverse;
+    align-items:center;
+    align-content:center; */
+  
+
+
+       
+
+
+
+#box1{
+    background-color:aqua;
+ 
+}
+
+
+#box2{
+    background-color: orange;
+   
+   
+   
+}
+
+   #box3{
+    background-color: green;
+   
+    
+   
+   }
+  
+#box4{
+    background-color: pink;
+    flex-shrink: 20;
+}
+
+#boxes{
+    background-color: rgb(218, 206, 224);
+  
+    
+}
+
+
+div{
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+
+}
+button:hover{
+   
+}
+
+a:hover{
+    background-color: pink;
+}

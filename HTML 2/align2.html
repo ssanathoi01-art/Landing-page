@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <Style>
+        button{
+            height:40px;
+            
+            background-color: rgba(13, 13, 86, 0.945);
+            color: white;
+            
+            border-radius: 8px;
+            
+            font-weight: bold;
+            border: none;
+            cursor:pointer
+            
+            
+
+        }
+
+        .button:hover{
+            background-color: red;
+            
+        }
+        .button:active{
+            background-color: pink;
+        }
+/*      ********************************************************** */
+
+
+.screen{
+    height: 640px;
+    width: 360px;
+    background-color:transparent;
+    border:40px solid transparent  ;
+    border-radius: 50px;
+    position: absolute;
+    margin-left: 300px;
+    margin-top: 60px; 
+    opacity: 1;
+    padding-top: 50px;
+    background-image: url(Background3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    
+}
+
+.image{
+    background-image: url(Background.png);
+    background-size: cover;
+    height: 700px;
+    width: 900px;
+    padding: 200px;
+    margin-top: 200px;
+    margin-left: 200px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.inner{
+    background-color: green;
+    height: 300px;
+    width: 300px;
+    margin-top: 120px;
+    margin-left: 30px;
+    border-radius: 20%;
+    position: relative;
+    opacity: 0.7;
+    
+}
+i{
+  
+    font-size: 40px;
+    /* margin-top: 50px;
+    display: flex; */
+    padding-top: 7px;
+    padding-left: 1px;
+
+}
+
+.div1{
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    display: inline-block;
+    margin-left: 27px;
+    margin-top: 30px;
+    margin-right: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+        
+}
+.div1:hover{
+    cursor: pointer;
+    transform: scale(1,1.2);
+    transition: 2ms;
+    
+}
+
+
+
+    </Style>
+</head>
+<body>
+    
+<button class="button"><i class="fa-solid fa-cloud-arrow-down"></i>Download</button>
+
+
+
+
+<div class="image">
+    <div class="screen">
+
+        <div class="inner">
+
+<div class="div1" style="background: #0088cc;"><i class="fa-brands fa-square-instagram"></i>
+Instagram</div>
+
+<div class="div1" style="background: #f0f2f5;"><i class="fa-brands fa-facebook"></i>
+Facebook </div> 
+<div class="div1" style="background:white"><i class="fa-brands fa-youtube"></i>
+Youtube </div> 
+<div class="div1" style="background: #25d366;"><i class="fa-brands fa-square-whatsapp"></i>
+Whatsapp </div> 
+<div class="div1" style="background: #1da1f2;"><i class="fa-brands fa-twitter"></i>
+Twitter </div> 
+<div class="div1" style="background: #3a81f1;"><i class="fa-brands fa-google-pay"></i>
+G pay </div> 
+<div class="div1" style="background:white"><i class="fa-brands fa-google"></i>
+Google </div> 
+<div class="div1" style="background: #ff0000;"><i class="fa-solid fa-folder"></i>
+files </div> 
+
+
+   </div>     
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

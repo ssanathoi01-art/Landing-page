@@ -1,0 +1,154 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* 
+div{
+    height: 150px;
+    width: 150px;
+    background-color: green;
+   
+        
+} */
+
+/* .div1{
+    margin: 100px;;
+    border-radius: 30px 30px;
+    color: white;
+    
+  
+    
+}
+
+.div1:hover{
+    background-color: #f1f1f1;
+    cursor: pointer;
+
+} */
+
+/* .div2{
+    margin:100px;
+    border-radius: 30px 40px 20px;
+    background-color: rgb(64, 39, 97);
+}
+
+.div3{
+    margin:100px;
+    border-radius: 50%;
+    background-color: rgb(181, 114, 125);
+}
+
+.div4{
+    margin:100px;
+    border-radius: 10px  50px;
+    background-color: rgb(190, 38, 38);
+}
+
+.div5{
+    margin:100px;
+    border-radius:0px;
+    background-color: rgb(71, 119, 231);
+}
+
+
+
+
+nav{
+    background-color: skyblue;
+}
+
+
+.Logo{
+    height: 70px;
+    width: 200px;
+    object-fit: cover;
+    border: 1px solid ;
+    
+}
+ */
+
+
+ section{
+   background-image: url(Tech.jpg);
+   background-size: cover;
+   height: 400px;
+   width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   border-radius: 5px;
+   
+
+ }
+
+
+ img{
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 10px;
+   
+ 
+    
+
+ }
+
+
+ .card{
+    height: 200px;
+    width: 200px;
+    background-color: gray;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.8;
+  
+    
+    
+    
+ }
+
+ h1{ 
+  text-align: center;
+  font-size:10px;
+  font-weight: 700;
+  color: white;
+  margin-top: 5px;
+ }
+
+ p{
+     text-align: center;
+  font-size:15px;
+  font-weight: 700;
+  color: rgb(231, 179, 179);
+  margin-top: 3px;
+ }
+
+ .social-media{
+    margin-top: 5px;
+ }
+
+ .FOLLOW{
+    background-color: rgb(106, 223, 106);
+    height: 40px;
+    width: 70px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    color: white;
+    font-size: 15px;
+ }
+
+ .FOLLOW:hover{
+    cursor: pointer;
+    background-color: blue;
+    color:rgb(127, 166, 49);
+    
+ }

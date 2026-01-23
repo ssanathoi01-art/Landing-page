@@ -1,0 +1,314 @@
+ .circle1{
+    height: 120px;
+    width:120px;
+    border-radius: 50%;
+    border: 20px solid yellow;
+    border-top:20px solid blue;
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    /* background-color:chocolate; */
+    /* border:2px solid black; */
+    /* transition-property: all;
+    transition-duration: 0.25s;
+    transition-timing-function: steps(3); 
+     transition-timing-function: ease-in;
+    transition-delay: 1s;   */
+    /* animation: developer 3s ease-in 1s infinite normal; */
+    animation-name: Developer;
+    animation-duration:0.5s ;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-duration: normal;
+     /* rotate: 45deg; */
+     /* transform: rotate(45deg);
+    transform: scale(3,2);
+
+    transform: translate(100px,80px); */
+    /* transform: skew(45deg); */}
+
+    /* @keyframes Developer{
+        0%{
+            /* background-color:pink; */
+            transform: rotate(0deg);
+        }
+        50%{
+            transform: rotate(180deg);
+            border-color: rgb(224, 121, 121);
+        }
+
+        100%{
+            /* background-color:blue; */
+        transform: rotate(360deg);
+        }
+    } */
+
+   
+
+    /* transition: all/ font-size  3s   steps(3)   2s;  */
+
+    
+/* div:hover{
+    background-color: red;
+     transform: rotate(180deg)
+     
+} */
+
+.circle2{
+        height: 120px;
+    width:120px;
+    border-radius: 50%;
+    border: 20px solid yellow;
+    border-top:20px solid blue;
+    position: absolute;
+    top: 100px;
+    left: 250px;
+    animation: ;
+     animation: Developer2 0.5s ease-in 0s infinite normal;
+
+
+
+
+}
+
+
+ @keyframes Developer2{
+        0%{
+            /* background-color:pink; */
+            transform: rotate(360deg);
+        }
+        50%{
+            transform: rotate(180deg);
+            border-color: rgb(224, 121, 121);
+        }
+
+        100%{
+            /* background-color:blue; */
+        transform: rotate(0deg);
+        }
+    }
+
+
+
+
+
+    .circle3{
+        height: 120px;
+    width:120px;
+    border-radius: 50%;
+    border: 20px solid yellow;
+    border-top:20px solid blue;
+    position: absolute;
+    top: 100px;
+    left: 347px;
+    animation: ;
+     animation: Developer3 0.5s ease-in 0s infinite normal;
+    }
+
+
+
+@keyframes Developer3{
+        0%{
+            /* background-color:pink; */
+            transform: rotate(360deg);
+        }
+        50%{
+            transform: rotate(180deg);
+            border-color: rgb(224, 121, 121);
+        }
+
+        100%{
+            /* background-color:blue; */
+        transform: rotate(0deg);
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+     .circle4{
+        height: 120px;
+    width:120px;
+    border-radius: 50%;
+    border: 20px solid yellow;
+    border-top:20px solid blue;
+    position: absolute;
+    top: 190px;
+    left: 300px;
+    animation: ;
+     animation: Developer4 0.5s ease-in 0s infinite normal;
+
+
+
+     }
+
+@keyframes Developer4{
+        0%{
+            /* background-color:pink; */
+            transform: rotate(360deg);
+        }
+        50%{
+            transform: rotate(180deg);
+            border-color: rgb(224, 121, 121);
+        }
+
+        100%{
+            /* background-color:blue; */
+        transform: rotate(0deg);
+        }
+    }
+
+
+
+
+
+
+
+     .circle5{
+        height: 120px;
+    width:120px;
+    border-radius: 50%;
+    border: 20px solid yellow;
+    border-top:20px solid blue;
+    position: absolute;
+    top: 190px;
+    left: 200px;
+    animation: ;
+     animation: Developer5 0.5s ease-in 0s infinite normal;
+   
+    
+     
+
+
+     }
+
+
+     @keyframes Developer5{
+        0%{
+            /* background-color:pink; */
+            transform: rotate(0deg);
+        }
+        50%{
+            transform: rotate(180deg);
+            border-color: rgb(224, 121, 121);
+        }
+
+        100%{
+            /* background-color:blue; */
+        transform: rotate(360deg);
+        }
+    } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+    .main {
+    width: 720px;;
+    height: 720px;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cyclic {
+    width: 100%;
+    height: 100%;
+    border: 30px double ;
+    border-radius: 50%;
+    position: absolute;
+    top: 500px;
+    left: 500px;
+   
+}
+
+.six {
+    border-color: rgb(160, 45, 218);
+    animation: spin1 4s ease-in infinite;
+}
+
+ .seven {
+    border-color: 	#c89817;
+    animation: spin2 4s ease-in-out infinite;
+}
+
+ .eight {
+    border-color:#304709a9;
+    animation: spin3 4s ease-out infinite;
+}
+              
+@keyframes spin1 {
+    0% {
+        transform: rotate(0deg);
+        width: 100%;
+    }
+    50% {
+        width: 40%;
+    }
+    100% {
+        transform: rotate(360deg);
+        width: 100%;
+    }
+}
+
+  @keyframes spin2 {
+    0% {
+        transform: rotate(0deg);
+        width: 100%;
+    }
+    50% {
+        width: 40%;
+    }
+    100% {
+        transform: rotate(360deg);
+        width: 100%;
+    }
+}
+
+
+  @keyframes spin3 {
+    0% {
+        transform: rotate(0deg);
+        width: 100%;
+    }
+    50% {
+        width: 40%;
+    }
+    100% {
+        transform: rotate(360deg);
+        width: 100%;
+    }
+} 
+
+
+
+
+
+

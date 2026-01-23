@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        marquee{
+            background-color: pink;
+            color: green;
+            font-size: 30px;
+            
+            
+        }
+
+        .main{
+            height: 400px;
+            width: 400px;
+            background-color: rgb(221, 201, 240);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* overflow:hidden; */
+            position: relative;
+            overflow-y: hidden;
+        }
+        .child{
+            height: 80%;
+            width: 80%;
+            background-color:orange;
+            position: absolute;
+            bottom: 0;
+           
+        }
+        .child:hover{
+            /* scale: 3; */
+             /* bottom: 30px; */
+             transform: scaleX(1);
+             transform: scaleY(3);
+          
+        }
+    </style>
+</head>
+
+<body>
+    
+    <marquee> This is the link herein you get your solutions!</marquee>
+
+    <marquee direction="reserved"></marquee>
+
+    <div class="main">
+        <div class="child"></div>
+    </div>
+
+    
+
+</body>
+</html>
