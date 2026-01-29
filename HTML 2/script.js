@@ -12,3 +12,19 @@ function show() {
   document.getElementById("result").innerText = x / y;
 }
  
+
+
+console.log("hello world!");
+
+console.log("This is Console !")
+
+
+let mark=prompt("enter any number");
+let grade;
+
+if(mark>=20 && mark<=50);
+{ grade="d"}
+ console.log(grade);
+
+
+ let
